@@ -176,7 +176,6 @@ Escrita por `CartVerificationTest`.
 
 Columnas:
 
-1. `FechaHora`  
 2. `Producto`  
 3. `CantidadEsperada`  
 4. `CantidadReal`  
@@ -267,45 +266,3 @@ mvn -Dtest=LoginTest test
 mvn -Dtest=SearchAndCartTest test
 mvn -Dtest=CartVerificationTest test
 ```
-
----
-
-## 7. Estrategia de automatización (resumen)
-
-- **Patrón POM**:
-  - Cada página del sitio tiene su clase en `com.opencart.pages`.
-  - `BasePage` centraliza helpers de Selenium y las esperas (`WaitUtil`).
-
-- **Sincronización (esperas)**:
-  - `WaitUtil` envuelve `WebDriverWait` + `ExpectedConditions`.
-  - Se usa `esperavisible` y `esperaClickeable` para mensajes y botones clave.
-
-- **Selectores**:
-  - Uso de `By.id`, `By.cssSelector`, `By.xpath` y `By.linkText` según necesidad.
-  - Se evita usar XPaths frágiles o índices absolutos cuando es posible.
-
-- **Datos externos (Excel)**:
-  - `ExcelUtil.leerDatos(...)` devuelve `List<String[]>` para DataProviders y ciclos.
-  - `ExcelUtil.escribirLog(...)` escribe filas nuevas en `Logs.xlsx` (creando hoja si no existe).
-
-- **Validaciones**:
-  - `Assert.assertTrue / assertFalse / assertEquals` para validar:
-    - Mensajes de éxito / error.
-    - Presencia de warnings.
-    - Existencia y cantidad de productos en el carrito.
-
----
-
-## 8. Recomendaciones para la entrega
-
-- Incluir en la carpeta de entrega:
-  - Código fuente completo (con esta estructura).
-  - `inputData.xlsx` y `Logs.xlsx`.
-  - Evidencias (capturas) de:
-    - Ejecuciones `mvn -Dtest=... test` con `BUILD SUCCESS`.
-    - Pantallas de registro, login y carrito.
-  - Documento (PDF/Word) explicando:
-    - Casos de prueba.
-    - Arquitectura (POM, utils, tests).
-    - Cómo ejecutar el proyecto.
-    - Cómo se usan los Excel y logs.
