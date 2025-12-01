@@ -13,7 +13,9 @@ Los datos de prueba se leen desde archivos Excel y los resultados se registran e
 Equipo de revisión:
 
 Maria Fanny Giraldo - A00399948
+
 John Hortua - A00373357
+
 Santiago Velasquez - A00372725
 
 ---
