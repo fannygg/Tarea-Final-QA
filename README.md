@@ -10,7 +10,7 @@ Los datos de prueba se leen desde archivos Excel y los resultados se registran e
 
 ---
 
-# Equipo de revisión: #
+# Equipo: #
 
 Maria Fanny Giraldo - A00399948
 
