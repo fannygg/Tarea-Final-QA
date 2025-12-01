@@ -1,0 +1,53 @@
+# Created at 2025-11-30T19:27:04.265
+org.testng.TestNGException: 
+Cannot instantiate class com.opencart.test.RegisterTest
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:43)
+	at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:18)
+	at org.testng.internal.objects.SimpleObjectDispenser.instantiateUsingDefaultConstructor(SimpleObjectDispenser.java:179)
+	at org.testng.internal.objects.SimpleObjectDispenser.createInstance(SimpleObjectDispenser.java:88)
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:41)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispenseObject(GuiceBasedObjectDispenser.java:41)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:31)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:107)
+	at org.testng.internal.ClassImpl.getObjects(ClassImpl.java:140)
+	at org.testng.internal.IObject.lambda$objects$0(IObject.java:59)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.testng.internal.IObject.objects(IObject.java:59)
+	at org.testng.TestClass.getObjects(TestClass.java:150)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:126)
+	at org.testng.TestClass.init(TestClass.java:118)
+	at org.testng.TestClass.<init>(TestClass.java:83)
+	at org.testng.TestRunner.initMethods(TestRunner.java:475)
+	at org.testng.TestRunner.init(TestRunner.java:349)
+	at org.testng.TestRunner.init(TestRunner.java:304)
+	at org.testng.TestRunner.<init>(TestRunner.java:178)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:636)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:197)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1365)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1339)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1199)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:40)
+	... 34 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	BaseTest cannot be resolved to a type
+	driver cannot be resolved to a variable
+
+	at com.opencart.test.RegisterTest.<init>(RegisterTest.java:12)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 37 more
+
+
