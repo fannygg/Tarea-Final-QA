@@ -80,7 +80,8 @@ Columnas (fila 1):
 2. `LastName`  
 3. `Email`  
 4. `Telephone`  
-5. `Password`  
+5. `Password`
+6. `PasswordConfirm`  
 
 Desde la fila 2 en adelante se definen usuarios a registrar.
 
