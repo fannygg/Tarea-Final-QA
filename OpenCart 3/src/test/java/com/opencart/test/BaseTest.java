@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 
 public class BaseTest {
-
     protected WebDriver driver;
     protected HomePage homePage;
 
